@@ -68,10 +68,8 @@ go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest &> /dev/nu
 go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
 go install github.com/tomnomnom/unfurl@latest &> /dev/null
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest &> /dev/null
-go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest &> /dev/null
 go install -v github.com/xm1k3/cent@latest &> /dev/null
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest &> /dev/null
-go install github.com/lc/gau/v2/cmd/gau@latest &> /dev/null
 go install github.com/OJ/gobuster/v3@latest &> /dev/null
 go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest &> /dev/null
 go install github.com/projectdiscovery/katana/cmd/katana@latest &> /dev/null
@@ -81,7 +79,6 @@ go install github.com/d3mondev/puredns/v2@latest &> /dev/null
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &> /dev/null
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/null
 go install github.com/ImAyrix/cut-cdn@latest &> /dev/null
-go install github.com/hahwul/dalfox/v2@latest &> /dev/null
 go install github.com/sw33tLie/sns@latest &> /dev/null
 
 
