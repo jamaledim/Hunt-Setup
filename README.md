@@ -6,7 +6,7 @@ Install Golang manually, the run the script.
 
 ## This script will install the following tools and packages:
 
-## apt Packages
+### apt Packages
 
 ```
 vim 
@@ -37,16 +37,16 @@ php-mysql
 dnsutils 
 whois 
 python3-pip
-
-## Packages from source
- 
+```
+### Packages from source
+```
 rust
 cargo
 ipinfo
 sourcegraph(src)
-
-## Github Tools
-
+```
+### Tools from source
+```
 massdns
 masscan
 waymore
@@ -62,9 +62,9 @@ recollapse
 ripgen
 dnsgen
 uro
-
-## Go Tools
-
+```
+### Go Tools
+```
 waybackurls
 alterx
 dnsx
@@ -94,7 +94,8 @@ subfinder
 uncover
 cut-cdn
 sns
-
-## shell
+```
+### shell
+```
 ohmyzsh
 ```
