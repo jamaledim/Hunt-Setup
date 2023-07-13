@@ -107,6 +107,7 @@ go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &> /
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/null
 go install github.com/ImAyrix/cut-cdn@latest &> /dev/null
 go install github.com/sw33tLie/sns@latest &> /dev/null
+go install github.com/BishopFox/jsluice/cmd/jsluice@latest &>/dev/null
 
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
