@@ -62,6 +62,7 @@ recollapse
 ripgen
 dnsgen
 uro
+fallparams
 ```
 ### Go Tools
 ```
@@ -94,6 +95,7 @@ subfinder
 uncover
 cut-cdn
 sns
+jsluice
 ```
 ### shell
 ```
