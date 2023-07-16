@@ -7,7 +7,7 @@ if [[ `cat /etc/os-release | grep ubuntu` ]];then
 
 echo "[+] Installing Packages..."
 apt update && apt upgrade && apt full-upgrade && apt autoclean && apt autoremove &>/dev/null
-apt install -y vim curl zsh git gcc net-tools tmux build-essential postgresql make python3-apt python3-distutils bind9 certbot python3-certbot-nginx libssl-dev zip unzip jq nginx pkg-config mysql-server php php-curl php-fpm php-mysql dnsutils whois python3-pip &> /dev/null
+apt install -y vim curl zsh git gcc net-tools ruby tmux build-essential postgresql make python3-apt python3-distutils bind9 certbot python3-certbot-nginx libssl-dev zip unzip jq nginx pkg-config mysql-server php php-curl php-fpm php-mysql dnsutils whois python3-pip &> /dev/null
 
 fi
 
