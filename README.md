@@ -37,6 +37,8 @@ php-mysql
 dnsutils 
 whois 
 python3-pip
+ruby
+rbu-dev
 ```
 ### Packages from source
 ```
@@ -63,6 +65,7 @@ ripgen
 dnsgen
 uro
 fallparams
+wpscan
 ```
 ### Go Tools
 ```
