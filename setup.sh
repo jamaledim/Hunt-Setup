@@ -80,7 +80,7 @@ make
 make install
 cd -
 
-git clone git clone https://github.com/mha4065/fAllParams.git
+git clone https://github.com/mha4065/fAllParams.git
 cd fAllParams
 pip3 install -r requirements.txt
 chmod +x fAllParams.py
