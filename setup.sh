@@ -80,6 +80,8 @@ pip3 install -r requirements.txt
 chmod +x fAllParams.py
 cd -
 
+gem install wpscan
+
 
 
 
