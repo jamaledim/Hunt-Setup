@@ -1,8 +1,6 @@
 # Hunt-Setup
+- Bug Bounty Hunting Server setup script
 
-## Bug Bounty Hunting Server setup script
-
-Install Golang manually, then run the script.
 
 ## This script will install the following tools and packages:
 
