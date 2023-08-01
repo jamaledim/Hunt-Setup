@@ -92,7 +92,44 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb
 rm -rf google-chrome-stable_current_amd64.deb
 
+# Function to fetch the latest stable Go version
+get_latest_go_version() {
+    LATEST_VERSION=$(curl -s https://go.dev/dl/ | grep -oP 'go[0-9]+\.[0-9]+\.[0-9]' | sort -u | sort -V | tail -1)
+    echo "$LATEST_VERSION"
+}
 
+# Get the latest stable version of Go
+GO_VERSION=$(get_latest_go_version)
+
+if [[ -z "$GO_VERSION" ]]; then
+    echo "Failed to fetch the latest Go version. Aborting."
+    exit 1
+fi
+
+# Define the download URL for the Go binary
+GO_BINARY_URL="https://go.dev/dl/$GO_VERSION.linux-amd64.tar.gz"
+
+# Define the directory where Go will be installed
+INSTALL_DIR="/usr/local"
+
+# Download the Go binary tarball
+curl -OL "$GO_BINARY_URL"
+
+# Extract the tarball and install Go
+sudo tar -C "$INSTALL_DIR" -xzf "$GO_VERSION.linux-amd64.tar.gz"
+
+# Add Go binaries to the system's PATH
+echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.bashrc"
+source "$HOME/.bashrc"
+
+echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.zshrc"
+source "$HOME/.zshrc"
+
+# Clean up the downloaded tarball
+rm "$GO_VERSION.linux-amd64.tar.gz"
+
+# Verify the Go installation
+go version
 
 echo "[+] Installing go tools... "
 go install github.com/tomnomnom/waybackurls@latest &> /dev/null
