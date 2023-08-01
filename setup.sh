@@ -123,6 +123,7 @@ echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.bashrc"
 source "$HOME/.bashrc"
 
 echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.zshrc"
+echo "export PATH=\$PATH:$HOME/go/bin" >> "$HOME/.zshrc"
 source "$HOME/.zshrc"
 
 # Clean up the downloaded tarball
