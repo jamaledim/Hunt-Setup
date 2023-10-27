@@ -32,6 +32,8 @@ cd massdns && make
 sudo make install  
 cd -
 
+pip install git+https://github.com/xnl-h4ck3r/urless.git
+
 git clone https://github.com/robertdavidgraham/masscan
 cd masscan && make
 sudo make install
