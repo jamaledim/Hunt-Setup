@@ -52,6 +52,7 @@ massdns
 masscan
 waymore
 xnLinkFinder
+urless
 bypass-403
 favicon_hash_shodan
 sqlmap
