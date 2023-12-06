@@ -178,6 +178,7 @@ go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/nul
 go install github.com/ImAyrix/cut-cdn@latest &> /dev/null
 go install github.com/sw33tLie/sns@latest &> /dev/null
 go install github.com/BishopFox/jsluice/cmd/jsluice@latest &>/dev/null
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
