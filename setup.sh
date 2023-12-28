@@ -10,7 +10,7 @@ echo "[+] Installing Packages..."
 curl https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
 
-apt update && apt upgrade && apt full-upgrade && apt autoclean && apt autoremove &>/dev/null
+apt update && apt upgrade && apt full-upgrade && apt autoclean && apt autoremove
 apt install -y vim curl zsh git gcc net-tools ruby ruby-dev cloudflare-warp tmux build-essential postgresql make python3-apt python3-distutils bind9 certbot python3-certbot-nginx libssl-dev zip unzip jq nginx pkg-config mysql-server php php-curl php-fpm php-mysql dnsutils whois python3-pip ca-certificates gnupg
 
 ## Instaling docker
