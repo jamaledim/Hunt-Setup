@@ -1,106 +1,59 @@
-# Hunt-Setup
-- Bug Bounty Hunting Server setup script
+# Server Setup Script
 
+This repository contains a comprehensive server setup script designed to streamline the installation and configuration of essential packages and tools on major Linux distributions including Ubuntu, CentOS, Fedora, and Debian. 
 
-## This script will install the following tools and packages:
+## Features
 
-### apt Packages
+- Automatically detects the operating system and installs packages accordingly
+- Installs essential tools and libraries such as Vim, Git, Docker, Nginx, MySQL, PHP, and more
+- Installs tools from source, including massdns, masscan, waymore, and others
+- Installs Rust and various Rust-based tools
+- Installs Go and various Go-based tools
+- Configures Cloudflare Warp
 
-```
-vim 
-curl 
-zsh 
-git 
-gcc 
-net-tools 
-tmux 
-build-essential 
-postgresql 
-make 
-python3-apt 
-python3-distutils 
-bind9 
-python3-certbot-nginx
-libssl-dev
-zip 
-unzip 
-jq 
-nginx 
-pkg-config 
-mysql-server 
-php 
-php-curl 
-php-fpm 
-php-mysql 
-dnsutils 
-whois 
-python3-pip
-ruby
-rbu-dev
-cloudflare-warp (port 5423)
-```
-### Packages from source
-```
-rust
-cargo
-ipinfo
-sourcegraph(src)
-```
-### Tools from source
-```
-massdns
-masscan
-waymore
-xnLinkFinder
-urless
-bypass-403
-favicon_hash_shodan
-sqlmap
-ParamSpider
-x8
-altdns
-kiterunner
-recollapse
-ripgen
-dnsgen
-uro
-wpscan
-```
-### Go Tools
-```
-waybackurls
-alterx
-dnsx
-tlsx
-anew
-cero
-cookiemonster
-ffuf
-gau
-gospider
-httpx
-dalfox
-naabu
-nuclei
-shuffledns
-unfurl
-asnmap
-cent
-chaos
-gobuster
-grpcurl
-katana
-mapcidr
-notify
-puredns
-subfinder
-uncover
-cut-cdn
-sns
-jsluice
-fallparams
-```
-### shell
-```
-ohmyzsh
-```
+## Supported Distributions
+
+- Ubuntu
+- CentOS
+- Fedora
+- Debian
+
+## Usage
+
+1. Clone this repository to your server:
+    ```bash
+    git clone https://github.com/yourusername/server-setup-script.git
+    cd server-setup-script
+    ```
+
+2. Make the script executable:
+    ```bash
+    chmod +x setup.sh
+    ```
+
+3. Run the script:
+    ```bash
+    sudo ./setup.sh
+    ```
+
+## Script Details
+
+### Operating System Detection
+
+The script automatically detects the operating system using `/etc/os-release` and runs the appropriate package installation commands for the detected OS.
+
+### Tools Installation
+
+For a detailed list of tools that are installed, please refer to the [TOOLS.md](TOOLS.md) file.
+
+## Customization
+
+You can customize the script to add or remove packages and tools as needed. The functions for installing packages and tools are modular, making it easy to modify for your specific requirements.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
