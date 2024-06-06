@@ -16,7 +16,6 @@ This repository contains a comprehensive server setup script designed to streaml
 - Ubuntu
 - CentOS
 - Fedora
-- Debian
 
 ## Usage
 
