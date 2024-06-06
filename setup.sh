@@ -94,12 +94,6 @@ make
 make install
 cd -
 
-git clone https://github.com/mha4065/fAllParams.git
-cd fAllParams
-pip3 install -r requirements.txt
-chmod +x fAllParams.py
-cd -
-
 gem install wpscan
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -145,39 +139,41 @@ source "$HOME/.zshrc"
 rm "$GO_VERSION.linux-amd64.tar.gz"
 
 # Verify the Go installation
-go version
+if [[ `go version` ]];then
 
-echo "[+] Installing go tools... "
-go install github.com/tomnomnom/waybackurls@latest &> /dev/null
-go install github.com/projectdiscovery/alterx/cmd/alterx@latest &> /dev/null
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest &> /dev/null
-go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest &> /dev/null
-go install -v github.com/tomnomnom/anew@latest &> /dev/null
-go install github.com/glebarez/cero@latest &> /dev/null
-go install github.com/iangcarroll/cookiemonster/cmd/cookiemonster@latest &> /dev/null
-go install github.com/ffuf/ffuf/v2@latest &> /dev/null
-go install github.com/lc/gau/v2/cmd/gau@latest &>/dev/null
-go install github.com/jaeles-project/gospider@latest &> /dev/null
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest &> /dev/null
-go install github.com/hahwul/dalfox/v2@latest &> /dev/null
-go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest &> /dev/null
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest &> /dev/null
-go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest &> /dev/null
-go install github.com/tomnomnom/unfurl@latest &> /dev/null
-go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest &> /dev/null
-go install -v github.com/xm1k3/cent@latest &> /dev/null
-go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest &> /dev/null
-go install github.com/OJ/gobuster/v3@latest &> /dev/null
-go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest &> /dev/null
-go install github.com/projectdiscovery/katana/cmd/katana@latest &> /dev/null
-go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest &> /dev/null
-go install -v github.com/projectdiscovery/notify/cmd/notify@latest &> /dev/null
-go install github.com/d3mondev/puredns/v2@latest &> /dev/null
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &> /dev/null
-go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/null
-go install github.com/ImAyrix/cut-cdn@latest &> /dev/null
-go install github.com/sw33tLie/sns@latest &> /dev/null
-go install github.com/BishopFox/jsluice/cmd/jsluice@latest &>/dev/null
+    echo "[+] Installing go tools... "
+    go version
+    go install github.com/tomnomnom/waybackurls@latest &> /dev/null
+    go install github.com/projectdiscovery/alterx/cmd/alterx@latest &> /dev/null
+    go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest &> /dev/null
+    go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest &> /dev/null
+    go install -v github.com/tomnomnom/anew@latest &> /dev/null
+    go install github.com/glebarez/cero@latest &> /dev/null
+    go install github.com/iangcarroll/cookiemonster/cmd/cookiemonster@latest &> /dev/null
+    go install github.com/ffuf/ffuf/v2@latest &> /dev/null
+    go install github.com/lc/gau/v2/cmd/gau@latest &>/dev/null
+    go install github.com/jaeles-project/gospider@latest &> /dev/null
+    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest &> /dev/null
+    go install github.com/hahwul/dalfox/v2@latest &> /dev/null
+    go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest &> /dev/null
+    go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest &> /dev/null
+    go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest &> /dev/null
+    go install github.com/tomnomnom/unfurl@latest &> /dev/null
+    go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest &> /dev/null
+    go install -v github.com/xm1k3/cent@latest &> /dev/null
+    go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest &> /dev/null
+    go install github.com/OJ/gobuster/v3@latest &> /dev/null
+    go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest &> /dev/null
+    go install github.com/projectdiscovery/katana/cmd/katana@latest &> /dev/null
+    go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest &> /dev/null
+    go install -v github.com/projectdiscovery/notify/cmd/notify@latest &> /dev/null
+    go install github.com/d3mondev/puredns/v2@latest &> /dev/null
+    go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &> /dev/null
+    go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/null
+    go install github.com/ImAyrix/cut-cdn@latest &> /dev/null
+    go install github.com/sw33tLie/sns@latest &> /dev/null
+    go install github.com/BishopFox/jsluice/cmd/jsluice@latest &>/dev/null
+    go install github.com/ImAyrix/fallparams@latest &> /dev/null
 
-
+fi
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
