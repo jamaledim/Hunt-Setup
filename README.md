@@ -64,7 +64,6 @@ recollapse
 ripgen
 dnsgen
 uro
-fallparams
 wpscan
 ```
 ### Go Tools
@@ -99,6 +98,7 @@ uncover
 cut-cdn
 sns
 jsluice
+fallparams
 ```
 ### shell
 ```
