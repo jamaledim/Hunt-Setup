@@ -174,6 +174,7 @@ if [[ `go version` ]];then
     go install github.com/sw33tLie/sns@latest &> /dev/null
     go install github.com/BishopFox/jsluice/cmd/jsluice@latest &>/dev/null
     go install github.com/ImAyrix/fallparams@latest &> /dev/null
+    go install -v github.com/glitchedgitz/cook/v2/cmd/cook@latest &>/dev/null
 
 fi
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
