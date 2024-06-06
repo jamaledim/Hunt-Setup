@@ -1,6 +1,6 @@
 # Server Setup Script
 
-This repository contains a comprehensive server setup script designed to streamline the installation and configuration of essential packages and tools on major Linux distributions including Ubuntu, CentOS, Fedora, and Debian. 
+This repository contains a comprehensive server setup script designed to streamline the installation and configuration of essential packages and tools for bug bounty hunting and penetration testing on major Linux distributions, including Ubuntu, CentOS, Fedora.
 
 ## Features
 
@@ -21,8 +21,8 @@ This repository contains a comprehensive server setup script designed to streaml
 
 1. Clone this repository to your server:
     ```bash
-    git clone https://github.com/yourusername/server-setup-script.git
-    cd server-setup-script
+    git clone https://github.com/jamaledim/Hunt-Setup.git
+    cd Hunt-Setup
     ```
 
 2. Make the script executable:
