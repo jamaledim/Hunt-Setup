@@ -148,11 +148,6 @@ install_go() {
     echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.bashrc"
     source "$HOME/.bashrc"
 
-    echo "export PATH=\$PATH:$INSTALL_DIR/go/bin" >> "$HOME/.zshrc"
-    echo "export PATH=\$PATH:$HOME/go/bin" >> "$HOME/.zshrc"
-    echo "unalias gau" >> "$HOME/.zshrc"
-    source "$HOME/.zshrc"
-
     rm "${GO_VERSION}.linux-amd64.tar.gz"
 
     if go version &> /dev/null; then
