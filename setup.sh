@@ -115,6 +115,8 @@ install_tools_from_source() {
     install_tool https://github.com/xnl-h4ck3r/waymore.git "sudo python3 setup.py install"
     install_tool https://github.com/xnl-h4ck3r/xnLinkFinder.git "sudo python3 setup.py install"
     install_tool https://github.com/sqlmapproject/sqlmap.git ""
+    install_tool https://github.com/devanshbatham/paramspider "pip install ."
+    install_tool https://github.com/phor3nsic/favicon_hash_shodan.git "sudo python3 setup.py install"
     install_tool https://github.com/0xacb/recollapse.git "pip3 install --user --upgrade -r requirements.txt && chmod +x install.sh && ./install.sh"
     install_tool https://github.com/jim3ma/crunch.git "make && sudo make install"
 
@@ -196,7 +198,7 @@ install_go() {
         install_go_package github.com/BishopFox/jsluice/cmd/jsluice@latest
         install_go_package github.com/ImAyrix/fallparams@latest
         install_go_package github.com/glitchedgitz/cook/v2/cmd/cook@latest
-        install_tool https://github.com/assetnote/kiterunner.git "make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr"
+        install_tool https://github.com/assetnote/kiterunner.git "make build && ln -s $(pwd)/dist/kr /usr/local/bin/kr " 
     fi
 }
 
