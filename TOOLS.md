@@ -54,15 +54,15 @@ This document lists all the tools that are installed by the server setup script.
 
 ## Python Packages
 
-- urless
-- dnsgen
-- uro
-- py-altdns==1.0.2
+- [urless](https://github.com/xnl-h4ck3r/urless)
+- [dnsgen](https://github.com/AlephNullSK/dnsgen/tree/master/dnsgen)
+- [uro](https://github.com/s0md3v/uro)
+- [altdns](https://github.com/infosec-au/altdns)
 
 ## Rust Packages
 
-- x8
-- ripgen
+- [x8](https://github.com/Sh1Yo/x8)
+- [ripgen](https://github.com/resyncgg/ripgen)
 
 ## Go Tools
 
