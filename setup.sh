@@ -114,9 +114,7 @@ install_tools_from_source() {
     install_tool https://github.com/robertdavidgraham/masscan.git "make && sudo make install"
     install_tool https://github.com/xnl-h4ck3r/waymore.git "sudo python3 setup.py install"
     install_tool https://github.com/xnl-h4ck3r/xnLinkFinder.git "sudo python3 setup.py install"
-    install_tool https://github.com/phor3nsic/favicon_hash_shodan.git "pip3 install -r requirements.txt"
     install_tool https://github.com/sqlmapproject/sqlmap.git ""
-    install_tool https://github.com/devanshbatham/ParamSpider.git "pip3 install -r requirements.txt"
     install_tool https://github.com/0xacb/recollapse.git "pip3 install --user --upgrade -r requirements.txt && chmod +x install.sh && ./install.sh"
     install_tool https://github.com/jim3ma/crunch.git "make && sudo make install"
 
