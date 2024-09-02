@@ -20,7 +20,7 @@ install_packages_ubuntu() {
     echo "deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
 
     sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
-    sudo apt install -y vim curl zsh git gcc net-tools ruby ruby-dev cloudflare-warp tmux build-essential postgresql make python3-apt python3-distutils bind9 certbot python3-certbot-nginx libssl-dev zip unzip jq nginx pkg-config mysql-server php php-curl php-fpm php-mysql dnsutils whois python3-pip ca-certificates gnupg
+    sudo apt install -y vim curl zsh git gcc net-tools ruby ruby-dev cloudflare-warp tmux build-essential postgresql make python3-apt bind9 certbot python3-certbot-nginx libssl-dev zip unzip jq nginx pkg-config mysql-server php php-curl php-fpm php-mysql dnsutils whois python3-pip ca-certificates gnupg
 
     # Installing Docker
     sudo install -m 0755 -d /etc/apt/keyrings
